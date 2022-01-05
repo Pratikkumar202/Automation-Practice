@@ -22,7 +22,7 @@ export const config: WebdriverIO.Config = {
     //
     specs: [
         // './features/**/*.feature'
-        './test/features/adminPage.feature'
+        './test/features/*.feature'
 
     ],
     // Patterns to exclude.

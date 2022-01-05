@@ -7,11 +7,17 @@ Feature: To chck the functionality of Admin Page
         And I enter password admin123
 
     Scenario Outline: Verify the tabs in Admin page
-        Given I am on landing page Dashboard
+        Given I am on Dashboard Dashboard
         And I move to Admin Page
-        When I hover over tabs
-        Then I verify the dropdown data
+        When I hover over <tabs>
+        Then I verify the dropdown data in respective <tabs>
 
-        # Examples:
-        #     | data  |
-        #     | Users |
+        Examples:
+            | tabs               |
+            | User Management    |
+            | Job                |
+            | Organization       |
+            | Qualifications     |
+            | Nationalities      |
+            | Corporate Branding |
+            | Configuration      |

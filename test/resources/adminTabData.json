@@ -1,9 +1,9 @@
 {
     "userManagentDropdownData":"Users",
-    "JobDropdownData1":"Job Titles",
-    "JobDropdownData2":"Pay Grades",
-    "JobDropdownData3":"Employment Status",
-    "JobDropdownData4":"Job Categories",
-    "JobDropdownData5":"Work Shifts"
-
+    "JobDropdownData":["Job Titles","Pay Grades","Employment Status","Job Categories","Work Shifts"],
+    "organizationData":["General Information","Locations","Structure"],
+    "qualificationsData":["Skills","Education","Licenses", "Languages","Memberships"],
+    "nationalitiesData":"",
+    "corporateBrandingData":"",
+    "configurationData":["Email Configuration","Email Subscriptions","Localization","Language Packages","Modules","Social Media Authentication","Register OAuth Client"]
 }

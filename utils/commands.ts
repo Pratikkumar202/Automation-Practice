@@ -5,8 +5,7 @@ export const selectDropdown = async(elements:ChainablePromiseArray<ElementArray>
         const elem = await  elements[i].getAttribute('value');
         if (elem === value) {
             await elements[i].click()
-            // addLog(`Selected dropdown value: ${value}`)
-            await browser.takeScreenshot()
+            // await browser.takeScreenshot()
             break;
         }
     }

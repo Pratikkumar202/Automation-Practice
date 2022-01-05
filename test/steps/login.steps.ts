@@ -20,6 +20,6 @@ When(/^I enter password (.+)$/, async (pwd: string) => {
 });
 
 Then(/^I logout from application$/, async () => {
-    await loginpage.clickOnLoginPanle()
+    await loginpage.clickOnLoginPanel()
     await loginpage.clickOnLogoutButton()
   });

@@ -12,6 +12,7 @@ class loginPage{
     async getUsername(uname: string){
        await this.userName.setValue(uname)
     }
+    
     async getPassword(pwd: string){
         await this.password.setValue(pwd)
     }
@@ -23,7 +24,7 @@ class loginPage{
     async getDashboard(){
         await this.dashboard.getText()
     }
-    async clickOnLoginPanle(){
+    async clickOnLoginPanel(){
         await this.loginPanel.click()
     
     }

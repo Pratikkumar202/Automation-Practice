@@ -4,7 +4,6 @@ import loginpage from "../../test/pages/login.page";
 
 
     Given(/^I am on Dashboard (.+)$/, async (text: string) => {
-        // await homePage.visable()
         await loginpage.submitLoginButton()
         await expect(homePage.dashboardTab).toHaveTextContaining(text)
     });
@@ -15,8 +14,7 @@ import loginpage from "../../test/pages/login.page";
     });
   
     Then(/^verify the landing page (.+)$/, async (heading: string) => {
-     expect(homePage.getListOfPages).toHaveValue(heading)
-     await loginpage.clickOnLoginPanle()
+     expect(homePage.getListOfPages()).toHaveValue(heading)
+     await loginpage.clickOnLoginPanel()
      await loginpage.clickOnLogoutButton()
     });
-  

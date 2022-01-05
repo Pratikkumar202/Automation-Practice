@@ -1,8 +1,7 @@
 
 class Assertion {
-    toContain(actual:string | string[], expected:string | string[]) {
+    toContain(actual:string | string[] | undefined, expected:string | string[] | undefined) {
         expect(actual).toContain(expected)
-        // addLog(`Assertion >> ${actual} to contain ${expected}`)
     }
 }
 export default new Assertion()
