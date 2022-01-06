@@ -1,0 +1,25 @@
+{
+    "adminDropdownData": [
+        "Users",
+        "Job Titles",
+        "Pay Grades",
+        "Employment Status",
+        "Job Categories",
+        "Work Shifts",
+        "General Information",
+        "Locations",
+        "Structure",
+        "Skills",
+        "Education",
+        "Licenses",
+        "Languages",
+        "Memberships",
+        "Email Configuration",
+        "Email Subscriptions",
+        "Localization",
+        "Language Packages",
+        "Modules",
+        "Social Media Authentication",
+        "Register OAuth Client"
+    ]
+}

@@ -1,36 +1,37 @@
 import { ChainablePromiseElement } from 'webdriverio';
 
-class loginPage{
+class loginPage {
 
-    get userName(): ChainablePromiseElement<Promise<WebdriverIO.Element>> { return $('#txtUsername')}
-    get password() {return $('#txtPassword')}
-    get loginButton() {return $('#btnLogin')}
-    get dashboard() { return $("a[id='menu_dashboard_index'] b")}
-    get loginPanel(){ return $('a[class="panelTrigger"]')}
-    get logOut(){ return $("//a[normalize-space()='Logout']")}
+    get userName(): ChainablePromiseElement<Promise<WebdriverIO.Element>> { return $('#txtUsername') }
+    get password() { return $('#txtPassword') }
+    get loginButton() { return $('#btnLogin') }
+    get dashboard() { return $("a[id='menu_dashboard_index'] b") }
+    get loginPanel() { return $('a[class="panelTrigger"]') }
+    get logOut() { return $("//a[normalize-space()='Logout']") }
 
-    async getUsername(uname: string){
-       await this.userName.setValue(uname)
+    async getUsername(uname: string) {
+        await this.userName.setValue(uname)
     }
-    
-    async getPassword(pwd: string){
+
+    async getPassword(pwd: string) {
         await this.password.setValue(pwd)
     }
 
-    async submitLoginButton(){
+    async submitLoginButton() {
         await this.loginButton.click()
     }
 
-    async getDashboard(){
+    async getDashboard() {
         await this.dashboard.getText()
     }
-    async clickOnLoginPanel(){
+
+    async clickOnLoginPanel() {
+        await this.loginPanel.waitForClickable()
         await this.loginPanel.click()
-    
     }
 
-    async clickOnLogoutButton(){
-        await this.logOut.waitForDisplayed()
+    async clickOnLogoutButton() {
+        await this.logOut.waitForClickable()
         await this.logOut.click()
     }
 }

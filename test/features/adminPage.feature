@@ -10,7 +10,10 @@ Feature: To chck the functionality of Admin Page
         Given I am on Dashboard Dashboard
         And I move to Admin Page
         When I hover over <tabs>
+        And I click on <tabs>
         Then I verify the dropdown data in respective <tabs>
+        And I logout from application
+
 
         Examples:
             | tabs               |
